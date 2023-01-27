@@ -13,10 +13,23 @@ body{
     justify-content: center;
     align-items: center;
 }
+img{
+    display: block;
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.container{
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (min-width:40rem) {
+    
 }
