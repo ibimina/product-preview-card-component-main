@@ -1,35 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: 100vh;
-    width: 100%;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
 }
-img{
-    display: block;
-    max-width: 100%;
-    border-radius: 8px 8px 0 0;
+img {
+  display: block;
+  max-width: 100%;
 }
-.container{
-    max-width: 500px;
-    width: 90%;
-    border-radius: 8px;
+.perfume {
+  border-radius: 8px 8px 0 0;
+}
+main{
+  max-width: 570px;
+  width: 90%;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+}
+.grey-text {
+  color: hsl(228, 12%, 48%);
+}
+.title {
+  letter-spacing: 6px;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+.parfum-name {
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 0.5em;
+  font-family: "Fraunces", serif;
+}
+article {
+  padding: 1.5em 1.5em 0;
+}
+.description {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0.8em;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+.discount {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+.amount {
+  text-decoration: line-through;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-size: 16px;
+  width: 100%;
+  border: 0;
+  padding: 1em 0;
+  border-radius: 8px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1em;
 }
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-bottom: 1em;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (min-width:40rem) {
-    
+@media (min-width: 40rem) {
+  main {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+  }
+.perfume {
+  border-radius: 8px 0 0 8px;
+  height: 100%;
+}
 }
